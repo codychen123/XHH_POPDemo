@@ -13,9 +13,12 @@
 		666072441E0A2F3200D64FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666072421E0A2F3200D64FCF /* Main.storyboard */; };
 		666072461E0A2F3200D64FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666072451E0A2F3200D64FCF /* Assets.xcassets */; };
 		666072491E0A2F3200D64FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666072471E0A2F3200D64FCF /* LaunchScreen.storyboard */; };
+		EDBBBE2167271EEEF177E26F /* libPods-XHH_POPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C01D8ABA79FBA7227F6EA7 /* libPods-XHH_POPDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16C01D8ABA79FBA7227F6EA7 /* libPods-XHH_POPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHH_POPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AA219270B2912056489723 /* Pods-XHH_POPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHH_POPDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHH_POPDemo/Pods-XHH_POPDemo.release.xcconfig"; sourceTree = "<group>"; };
 		666072361E0A2F3200D64FCF /* XHH_POPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHH_POPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6660723A1E0A2F3200D64FCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6660723C1E0A2F3200D64FCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		666072451E0A2F3200D64FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		666072481E0A2F3200D64FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6660724A1E0A2F3200D64FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F7A65E758C5FF2E27695E0 /* Pods-XHH_POPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHH_POPDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHH_POPDemo/Pods-XHH_POPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBBBE2167271EEEF177E26F /* libPods-XHH_POPDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				666072381E0A2F3200D64FCF /* XHH_POPDemo */,
 				666072371E0A2F3200D64FCF /* Products */,
+				CA8EA6295FCCBD30A5441B28 /* Pods */,
+				8E1CF00AD3D695EB839F942F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E1CF00AD3D695EB839F942F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16C01D8ABA79FBA7227F6EA7 /* libPods-XHH_POPDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8EA6295FCCBD30A5441B28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81F7A65E758C5FF2E27695E0 /* Pods-XHH_POPDemo.debug.xcconfig */,
+				26AA219270B2912056489723 /* Pods-XHH_POPDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6660724D1E0A2F3200D64FCF /* Build configuration list for PBXNativeTarget "XHH_POPDemo" */;
 			buildPhases = (
+				EEE3B3E202EDF87D18A9B837 /* [CP] Check Pods Manifest.lock */,
 				666072321E0A2F3200D64FCF /* Sources */,
 				666072331E0A2F3200D64FCF /* Frameworks */,
 				666072341E0A2F3200D64FCF /* Resources */,
+				CC8910FAF2886A072CA68096 /* [CP] Embed Pods Frameworks */,
+				4BC80393DBA7315F4EF589A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BC80393DBA7315F4EF589A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHH_POPDemo/Pods-XHH_POPDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8910FAF2886A072CA68096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHH_POPDemo/Pods-XHH_POPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE3B3E202EDF87D18A9B837 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		666072321E0A2F3200D64FCF /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		6660724E1E0A2F3200D64FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F7A65E758C5FF2E27695E0 /* Pods-XHH_POPDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XHH_POPDemo/Info.plist;
@@ -279,6 +355,7 @@
 		};
 		6660724F1E0A2F3200D64FCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AA219270B2912056489723 /* Pods-XHH_POPDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XHH_POPDemo/Info.plist;
