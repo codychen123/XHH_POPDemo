@@ -42,6 +42,9 @@
     POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(0.7, 0.7)];
     scaleAnimation.duration = 0.3;
+//    scaleAnimation.springBounciness = 0.5;
+//    scaleAnimation.springSpeed = 5;
+    
     [self.imageView.layer pop_addAnimation:scaleAnimation forKey:nil];
     scaleAnimation.completionBlock = ^(POPAnimation *animation, BOOL finished) {
         POPBasicAnimation *scaleAnimationTwo = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
